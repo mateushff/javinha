@@ -1,4 +1,24 @@
-<script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="arquivo" type="text/css" href="arquivo.css" media="screen" />
+    </head>
+    <body>
+        <script>
 
-    document.write("<h1>Olá mundo</h1>")
-</script>
+            document.write("<h1>Olá</h1>");
+            var button = document.createElement("button");
+            button.innerHTML = "Nome";
+
+            // 2. Append somewhere
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(button);
+
+            // 3. Add event handler
+            button.addEventListener ("click", function() 
+            {
+                
+            });
+        </script>
+    </body>
+</html>
