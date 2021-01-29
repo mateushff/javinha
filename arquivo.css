@@ -1,14 +1,30 @@
 body {
     padding: 20px;
   }
+  div{
+    border: 2px outset rgb(0, 0, 0);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
   button {
     margin-top: 20px;
     line-height: 60px;
     font-weight: bold;
     padding: 0 40px;
-    background: salmon;
-    border: none;
+    background: rgb(211, 226, 158);
+    border: 4px inset rgb(211, 226, 158);
   }
   button:hover {
-    background: lightsalmon;
+    background: rgb(93, 235, 50);
+    border: 4px inset rgb(93, 235, 50);
+  }
+ .div1{
+    background-color: salmon;
+    text-align: center;
+    border: 5px outset red;
+}
+span {
+    color: red;
+    cursor: pointer;
   }

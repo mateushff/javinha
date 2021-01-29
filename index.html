@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="arquivo" type="text/css" href="arquivo.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="arquivo.css">
     </head>
     <body>
-        <script src="jquery 3.2.1.js">
-
-            document.write("<h1>Olá</h1>");
-            var button = document.createElement("button");
-            button.innerHTML = "Nome";
-
-            // 2. Append somewhere
-            var body = document.getElementsByTagName("body")[0];
-            body.appendChild(button);
-
-            // 3. Add event handler
-            button.addEventListener ("click", function() 
-            {
+        <center>
+        <script src="jquery 3.2.1.js"></script>
+        
+        <div>
+            <h1 class="div1">MATEUS É UM CARA LEGAL</h1>
+            <p>Nome:<input type=text id=nome></p>
+            <p>Idade:<input type=number id=idade></p>
+            <p>Numero:<input type=number id=numero></p>
+            <p>Email:<input type=email id=email></p>
+            <br>
+            <p><button id="pronto">Enviar</button></p>
+        </div>
+        <script>
+            $("#pronto").click(function(){
+            var nome =  document.getElementById('nome').value;
+            var idade =  document.getElementById('idade').value;
+            var numero =  document.getElementById('numero').value;
+            var email =  document.getElementById('email').value;
                 
+            alert(nome+" "+idade+" "+numero+" "+email);
+            
             });
         </script>
+        </center>
     </body>
 </html>
